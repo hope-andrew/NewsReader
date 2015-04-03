@@ -1,0 +1,9 @@
+<h2> <strong> Feeds </strong> </h2>
+
+<ul class="feed-index">
+<% collection.each( function(feed) { %>
+  <li>
+    <a href="<%= "#feeds/" + feed.id %>" > <%= feed.escape('title') %> </a>
+  </li>
+<% })%>
+</ul>
